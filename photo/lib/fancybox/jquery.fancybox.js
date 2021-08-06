@@ -83,7 +83,7 @@
 			closeClick : false,
 			nextClick  : false,
 			mouseWheel : true,
-			autoPlay   : false,
+			autoPlay   : true,
 			playSpeed  : 3000,
 			preload    : 3,
 			modal      : false,
