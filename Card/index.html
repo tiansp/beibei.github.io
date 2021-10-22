@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- 引用外部css、js文件 -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/pics.css">
+    <!--打字机特效脚本js文件（网上cpoy）-->
+    <script type="text/javascript" src="js/daziji.js"></script>
+    <!-- 用于控制音乐暂停开始 -->
+    <script type="text/javascript" src="js/m-con.js"></script>
+    <title>To:涔</title>
+</head>
+
+<body>
+<div id='main'>
+    <div id='music'>
+        <audio autoplay="true" id="mp3">
+            <source src="audio/1.mp3" type="audio/mpeg" id="stop">
+        </audio>
+    </div>
+    <!-- 音乐图标 -->
+    <div class="music">
+        <img class="play" src="images/music.png" onmousedown="stop_s()" alt="啊啊啊">
+    </div>
+    <!-- 轮播图 -->
+    <div class="shell">
+        <ul class="images">
+            <li class="img"></li>
+            <li class="img"></li>
+            <li class="img"></li>
+            <li class="img"></li>
+            <li class="img"></li>
+            <li class="img"></li>
+            <li class="img"></li>
+        </ul>
+        <ul class="minims">
+            <li class="min"></li>
+            <li class="min"></li>
+            <li class="min"></li>
+            <li class="min"></li>
+            <li class="min"></li>
+            <li class="min"></li>
+            <li class="min"></li>
+        </ul>
+        <div class="button">
+            <div class="left_but"></div>
+            <div class="right_but"></div>
+        </div>
+    </div>
+    <!-- 中心文字内容 -->
+    <div id='source'>
+        <br/>
+        <h1>To:涔</h1>
+        <p>
+            趁现在，尽你自己最大的努力，<br/>
+            努力做成你最想做的事情，<br/>
+            成为你最想成为的人，<br/>
+            过你最想过的那种生活。<br/><br/>
+            也许我们始终都只是一个小人物，<br/>
+            也许我们暂时得不到我们想要的东西，<br/>
+            也许没有人真正地理解自己，<br/>
+            但是这并不妨碍我们选择用什么样的方式活下去，<br/>
+            这个世界永远比你想的要更精彩，<br/>
+            不要败给生活，更不要败给自己！<br/>
+        </p>
+        <pre><br/>
+祝你年年皆胜意
+岁岁都欢愉
+生日快乐!<br/>
+            </pre>
+    </div>
+    <!-- 调用打字机特效 -->
+    <div id='content'>
+        <script type="text/javascript">
+            let source = document.getElementById('source')
+            let output = document.getElementById('content')
+            let typing = new Typing({
+                source,
+                output
+            })
+            typing.start()
+        </script>
+    </div>
+</div>
+<script type="text/javascript" src="js/pic.js"></script>
+</body>
+
+</html>
