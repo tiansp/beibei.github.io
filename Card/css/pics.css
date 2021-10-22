@@ -18,7 +18,19 @@ ul, li {
     border-radius: 5px;
     box-shadow: 20px 30px 20px rgba(0, 0, 0, .5);
 }
+@media screen and (max-width: 480px) {
+.shell {
+    width: 600px;
+    height: 500px;
+    position: absolute;
+    bottom: 2vh;
+    overflow-x: hidden;
+    border: 10px #fff solid;
+    border-radius: 5px;
+    box-shadow: 20px 30px 20px rgba(0, 0, 0, .5);
+}
 
+}
 .images {
     width: 700%;
     height: 100%;
